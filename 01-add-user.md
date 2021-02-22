@@ -1,4 +1,4 @@
-# Create a cert for the new user
+# Create a config file for the new user
 
 First we need to generate an rsa key
 ```
