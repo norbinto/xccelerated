@@ -5,6 +5,12 @@ Create a namespace for testing
 kubectl create ns development
 ```
 
+RBAC:
+Roles -- RoleBinding -- User
+  |
+  |
+Resource
+
 Create the role
 ```
 kind: Role
@@ -37,5 +43,5 @@ roleRef:
  name: dev
  apiGroup: rbac.authorization.k8s.io
  ```
- 
+
 Cluster role is similar, but it does not linked to a namespace, it has power in the whole cluster
