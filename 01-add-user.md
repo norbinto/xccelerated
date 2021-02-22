@@ -1,6 +1,6 @@
 # Create a cert for the new user
 
-First we need to generate a 
+First we need to generate an rsa key
 ```
 openssl genrsa -out bob.key 4096
 ```
@@ -30,7 +30,7 @@ CSR=Certificate Signing Request
 openssl req -config ./csr.cnf -new -key bob.key -nodes -out bob.csr
 ```
 
-One the CSR is ready bob muts send it to the admin of the cluster
+When the CSR is ready, Bob must send it to the admin of the cluster
 
 # Certificate Signing Request
 
