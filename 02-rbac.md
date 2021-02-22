@@ -21,7 +21,7 @@ metadata:
 rules:
 - apiGroups: [""]
   resources: ["pods", "services"]
-  verbs: ["create", "get", "update", "list", "delete"]
+  verbs: ["*"]
 - apiGroups: ["apps"]
   resources: ["deployments"]
   verbs: ["create", "get", "update", "list", "delete"]
